@@ -1,5 +1,5 @@
 #include <iostream>
-#include<vector>
+#include<vector>//vector²»ÊÇÄ£°å
 using namespace std;
 class MyQueue {
 private:
