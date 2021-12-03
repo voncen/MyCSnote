@@ -1,0 +1,24 @@
+/*
+ * @lc app=leetcode.cn id=7 lang=cpp
+ *
+ * [7] 整数反转
+ */
+
+// @lc code=start
+class Solution {
+public:
+    int reverse(int x) {
+       int num=0;
+        while(x)
+        {
+            if(num>INT_MAX/10 || num<INT_MIN/10) return 0;
+            num = num*10+x%10;
+            x = x/10;
+        }
+        return num;
+
+    }
+};
+// @lc code=end
+//2021-12-03
+
